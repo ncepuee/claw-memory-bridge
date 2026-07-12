@@ -33,11 +33,20 @@ Requires Node.js >= 22 (uses built-in `node:sqlite`).
 
 ## Configure
 
-### Claude Code
+### Claude Code (stdio)
 
 ```bash
 claude mcp add claw-memory-bridge --scope user -- node /path/to/claw-memory-bridge/server.js
 ```
+
+### Claude Code Plugin (Marketplace, recommended)
+
+```bash
+claude plugin marketplace add https://github.com/ncepuee/claw-memory-bridge
+claude plugin install claw-memory-bridge@claw-memory-bridge
+```
+
+Plugin install auto-runs `npm install` for dependencies. Don't enable both stdio and plugin at the same time (same MCP name).
 
 ### Codex
 
