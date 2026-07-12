@@ -1,0 +1,14 @@
+{
+  "name": "claw-memory-bridge",
+  "displayName": "Claw Memory Bridge",
+  "version": "0.1.0",
+  "description": "Cross-agent shared memory bridge for MCP - connects QClaw, Claude Code & Codex memory.",
+  "author": {
+    "name": "ncepuee",
+    "url": "https://github.com/ncepuee"
+  },
+  "homepage": "https://github.com/ncepuee/claw-memory-bridge",
+  "repository": "https://github.com/ncepuee/claw-memory-bridge",
+  "license": "MIT",
+  "keywords": ["mcp", "memory", "agent", "shared-memory"]
+}

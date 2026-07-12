@@ -1,0 +1,33 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claw-memory-bridge",
+  "owner": {
+    "name": "ncepuee",
+    "url": "https://github.com/ncepuee"
+  },
+  "description": "Marketplace for Claw Memory Bridge - a cross-agent shared memory MCP server.",
+  "plugins": [
+    {
+      "name": "claw-memory-bridge",
+      "source": "./",
+      "description": "Cross-agent shared memory bridge for MCP - connects QClaw, Claude Code & Codex memory.",
+      "version": "0.1.0",
+      "author": {
+        "name": "ncepuee",
+        "url": "https://github.com/ncepuee"
+      },
+      "homepage": "https://github.com/ncepuee/claw-memory-bridge",
+      "repository": "https://github.com/ncepuee/claw-memory-bridge",
+      "license": "MIT",
+      "keywords": ["mcp", "memory", "agent", "shared-memory", "qclaw"],
+      "category": "productivity",
+      "mcpServers": {
+        "claw-memory-bridge": {
+          "command": "node",
+          "args": ["${CLAUDE_PLUGIN_ROOT}/server.js"]
+        }
+      },
+      "strict": false
+    }
+  ]
+}
